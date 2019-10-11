@@ -1,4 +1,4 @@
-package cn.com.yangheng.collection;
+package cn.com.yangheng.collection.list;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -7,14 +7,28 @@ import java.util.ListIterator;
 
 public class MyArrayList<E> implements List<E> {
 
+    private int size;
+    private Object[] elementData = {};
+    private static final int INIT_LIST_SIZE = 10;
+
+    public MyArrayList(int size) {
+        this.size = size;
+    }
+
+    public MyArrayList() {
+        new MyArrayList(INIT_LIST_SIZE);
+    }
 
     @Override
     public int size() {
-        return 0;
+        return size;
     }
 
     @Override
     public boolean isEmpty() {
+        if (size == 0) {
+            return true;
+        }
         return false;
     }
 

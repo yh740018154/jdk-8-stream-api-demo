@@ -1,4 +1,4 @@
-package cn.com.yangheng.jdk8streamapidemo;
+package cn.com.yangheng.stream;
 
 import org.junit.Test;
 

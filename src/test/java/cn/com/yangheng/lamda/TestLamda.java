@@ -42,4 +42,11 @@ public class TestLamda {
     }
 
 
+    @Test
+    public void test() {
+        Number number1 ;
+
+
+    }
+
 }
